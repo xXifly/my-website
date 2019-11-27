@@ -4,7 +4,7 @@
       <img class="portrait" src="~assets/portrait.svg" />
       <div class="name">Hi, I'm Alexandre.</div>
       <div class="description">
-        I'm a 23-year-old web developer passionate aboute full-stack web
+        I'm a 23-year-old web developer passionate about full-stack web
         development, design and graphics.
       </div>
     </div>
