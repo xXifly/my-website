@@ -1,10 +1,12 @@
 <template>
   <div class="home">
-    <img class="portrait" src="~assets/portrait.svg" />
-    <div class="name">Hi, I'm Alexandre.</div>
-    <div class="description">
-      I'm a 23-year-old web developer passionate aboute full-stack web development,
-      design and graphics.
+    <div class="blue-panel">
+      <img class="portrait" src="~assets/portrait.svg" />
+      <div class="name">Hi, I'm Alexandre.</div>
+      <div class="description">
+        I'm a 23-year-old web developer passionate aboute full-stack web
+        development, design and graphics.
+      </div>
     </div>
   </div>
 </template>
@@ -17,9 +19,28 @@ export default Vue.extend({});
 
 <style land="scss" scoped>
 .home {
+  height: 100vh;
+}
+
+.blue-panel {
   background-color: #11467f;
-  width: 100%;
   padding: 5%;
+  height: 75vh;
+  position: relative;
+}
+
+.blue-panel::after {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 98.1%;
+  left: 70%;
+  border-top: solid 50px #11467f;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  margin-left: -25%;
 }
 
 .portrait {
