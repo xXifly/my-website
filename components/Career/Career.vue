@@ -4,8 +4,8 @@
     <div class="experiences-list">
       <Experience
         v-for="item in experiences"
-        :key="item.title"
-        :title="item.title"
+        :key="item.post"
+        :post="item.post"
         :company="item.company"
         :location="item.location"
         :startDate="item.startDate"
@@ -28,39 +28,39 @@ export default {
       name: "career",
       experiences: [
         {
-          title: "Full Stack Developer on Aurélia / C#",
+          post: "Full Stack Developer on Aurélia / C#",
           company: "Apside / Berger Levrault",
           location: "Toulouse, France",
-          startDate: "03/2019",
-          endDate: "09/2019",
+          startDate: "March 2019",
+          endDate: "September 2019",
           description:
             "Projet de fin d'étude (PFE) au sein de l'ESN Apside, en mission chez le client Berger-Levrault. Objectif : Développement d'une plateforme web médico-sociale.Environnement fonctionnel : concevoir, réaliser et recetter les solutions techniques à mettre en œuvre dans un des modules de la plateforme santé (Dossier administratif, Facturation, Dossier de soins, Planning, Prescription, Connecteur …)"
         },
         {
-          title:
+          post:
             "Project Manager, Integrator and Developer Full Stack JavaScript",
           company: "Armatis-Lc",
           location: "Calais, France",
-          startDate: "09/2018",
-          endDate: "03/2018",
+          startDate: "September 2018",
+          endDate: "March 2019",
           description:
             "Projet Innovation et Conception (PIC) réalisé au sein de l'entreprise Armatis-lc accompagné de deux collègues élèves-ingénieurs : Jean-Christophe Meyer et Ulysse Pirlot. Conception d'une solution digitale accompagnant le téléconseiller dans le but de simplifier sa tâche quotidienne et lui offrir des moyens d’agrémenter sa conversation avec le client en prenant appui sur les fichiers de prospection en base et en allant sourcer sur le web des informations pertinentes et géolocalisées. Environnement technique : Node.Js, HTML, CSS, Javascript, C#."
         },
         {
-          title: "Intern in Web development under AGILE method",
+          post: "Intern in Web development under AGILE method",
           company: "U-Need Consulting",
           location: "Toulouse, France",
-          startDate: "06/2018",
-          endDate: "08/2018",
+          startDate: "June 2018",
+          endDate: "August 2018",
           description:
             "Stage d'assistant ingénieur au sein de l'entreprise U-Need. Intervention sur l’évolution et l’optimisation d'une application web de gestion. Digitalisation du système de facturation de l’entreprise. Pilotage et réalisation du projet par la mise en place d'une méthode AGILE. Environnement technique : PHP, SQL, Javascript, JQuery, CSS, HTML."
         },
         {
-          title: "Integrator, designer and web developer",
+          post: "Integrator, designer and web developer",
           company: "2ST-CI and Wake Up Africa",
           location: "Abidjan, Côte d'Ivoire",
-          startDate: "06/2016",
-          endDate: "08/2016",
+          startDate: "June 2016",
+          endDate: "August 2016",
           description:
             "Stage au sein de l'ENS 2ST-CI et l'association Wake Up Africa, association créée par des ivoiriens dans le but de développer les domaines de la santé et de l'éducation en Côte d'Ivoire et, plus globalement, en Afrique. Développement d'une plateforme web d'échange de données médicales ayant pour objectif de faciliter les diagnostics médicaux et de les rendre accessibles dans tout le pays. Création du site officiel de l'association Wake Up Africa. Environnement technologique : CSS, HTML, PHP, MySQL, Bootstrap et jQuery."
         }

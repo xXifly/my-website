@@ -1,9 +1,17 @@
 <template>
   <div class="experience">
     <span class="circle" />
-    <div class="experience__title">{{ title }}</div>
-    <div class="experience__company">{{ company }} at {{ location }}</div>
-    <div class="experience__date">{{ startDate }} to {{ endDate }}</div>
+
+    <div class="experience__title">
+      <span class="company">{{ company.toUpperCase() }}</span> |
+      <span class="post">{{ post }}</span>
+    </div>
+    <div class="experience__subtitle">
+      <span class="experience__date">{{ startDate }} to {{ endDate }}</span>
+      <span class="experience__location">
+        <fa :icon="['fas', 'map-marker-alt']" /> {{ location }}
+      </span>
+    </div>
     <div class="experience__description">{{ description }}</div>
   </div>
 </template>
@@ -12,7 +20,7 @@
 export default {
   name: "Experience",
   props: {
-    title: {
+    post: {
       type: String,
       required: true
     },
@@ -41,11 +49,12 @@ export default {
 </script>
 
 <style lang="scss">
-$circle-size: 51px;
-$array-size: 12px;
-$colour-primary: #11467f;
+$primary-color: #11467f;
+$secondary-color: #f9af3b;
 $back-color: #ffffff;
 $border-color: #cfdae5;
+$circle-size: 51px;
+$array-size: 12px;
 
 .experience {
   padding: 15px;
@@ -54,17 +63,36 @@ $border-color: #cfdae5;
   position: relative;
   background-color: $back-color;
   border: 9px solid $border-color;
-  box-shadow: 10px 5px 5px darken($colour-primary, 5%);
-  transition: transform 400ms;
+  box-shadow: 10px 5px 5px darken($primary-color, 5%);
+  transition: transform ease-in-out 400ms;
   transform-origin: -84px 50%;
   &:hover {
     transform: scale(1.04);
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
-    color: $colour-primary;
+    color: $primary-color;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+
+  &__location {
+    color: darken($secondary-color, 12%);
+    font-weight: 600;
+  }
+
+  &__date {
+    color: #757575;
+  }
+
+  &__description {
+    text-align: justify;
   }
 
   &::after {

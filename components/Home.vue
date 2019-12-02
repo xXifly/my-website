@@ -1,7 +1,7 @@
 <template>
   <div class="intro-panel">
     <img class="intro-panel__portrait" src="~assets/portrait.svg" />
-    <div class="intro-panel__name">Hi, I'm Alexandre.</div>
+    <div class="intro-panel__name">Hi, I'm <span class="name">Alexandre</span>.</div>
     <div class="intro-panel__description">
       I'm a {{ age }}-year-old web developer passionate aboute full-stack web
       development, design and graphics.
@@ -31,6 +31,7 @@ export default Vue.extend({
 
 <style lang="scss">
 $colour-primary: #11467f;
+$secondary-color: #f9af3b;
 
 .intro-panel {
   background-color: $colour-primary;
@@ -50,6 +51,10 @@ $colour-primary: #11467f;
     font-size: 70px;
     letter-spacing: 1px;
     font-weight: 500;
+
+    .name {
+      color: $secondary-color;
+    }
   }
 
   &__description {
