@@ -9,10 +9,18 @@
     <div class="experience__subtitle">
       <span class="experience__date">{{ startDate }} to {{ endDate }}</span>
       <span class="experience__location">
-        <fa :icon="['fas', 'map-marker-alt']" /> {{ location }}
+        {{ location }} <fa :icon="['fas', 'map-marker-alt']" />
       </span>
     </div>
-    <div class="experience__description">{{ description }}</div>
+    <div class="experience__content">
+      <div class="experience__description">{{ description }}</div>
+      <div class="experience__objective">
+        <strong>Objective :</strong> {{ objective }}
+      </div>
+      <div class="experience__environment">
+        <strong>Technical environment :</strong> {{ environment }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -41,6 +49,14 @@ export default {
       default: "now"
     },
     description: {
+      type: String,
+      required: true
+    },
+    objective: {
+      type: String,
+      required: true
+    },
+    environment: {
       type: String,
       required: true
     }
@@ -91,7 +107,7 @@ $array-size: 12px;
     color: #757575;
   }
 
-  &__description {
+  &__content {
     text-align: justify;
   }
 

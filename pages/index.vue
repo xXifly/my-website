@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Home />
+    <AboutMe />
     <Career />
   </div>
 </template>
@@ -8,11 +9,14 @@
 <script>
 import Home from "~/components/Home.vue";
 import Career from "~/components/Career/Career.vue";
+import AboutMe from "~/components/AboutMe/AboutMe.vue";
 
 export default {
+  name: "index",
   components: {
     Home,
-    Career
+    Career,
+    AboutMe
   }
 };
 </script>

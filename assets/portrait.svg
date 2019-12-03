@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -199,7 +199,7 @@
        id="path1545"
        inkscape:connector-curvature="0" />
     <circle
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#0b2d52;stroke-width:1.90488183;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#ded0da;fill-opacity:1;stroke:#0b2d52;stroke-width:1.90488183;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path2168"
        cx="237.72795"
        cy="222.8909"
@@ -209,7 +209,7 @@
        cy="222.8909"
        cx="271.72797"
        id="circle2185"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#0b2d52;stroke-width:1.90488183;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#ded0da;fill-opacity:1;stroke:#0b2d52;stroke-width:1.90488183;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        style="fill:none;stroke:#0b2d52;stroke-width:2.13543296;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 251.79073,222.31689 6.8879,0.0956"

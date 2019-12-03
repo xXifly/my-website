@@ -1,7 +1,9 @@
 <template>
   <div class="intro-panel">
     <img class="intro-panel__portrait" src="~assets/portrait.svg" />
-    <div class="intro-panel__name">Hi, I'm <span class="name">Alexandre</span>.</div>
+    <div class="intro-panel__name">
+      Hi, I'm <span class="name">Alexandre</span>.
+    </div>
     <div class="intro-panel__description">
       I'm a {{ age }}-year-old web developer passionate aboute full-stack web
       development, design and graphics.
@@ -51,6 +53,7 @@ $secondary-color: #f9af3b;
     font-size: 70px;
     letter-spacing: 1px;
     font-weight: 500;
+    font-family: Woodchuck-Regular;
 
     .name {
       color: $secondary-color;
