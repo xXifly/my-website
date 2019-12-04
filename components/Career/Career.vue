@@ -3,7 +3,7 @@
     <h1 class="career__title">Career</h1>
     <div class="career__content">
       <div class="career__picture-content">
-        <img class="career__picture" src="~/assets/career.svg" />
+        <img class="career__picture" src="~/assets/img/career.svg" />
       </div>
       <div class="career__list">
         <Experience
@@ -98,27 +98,21 @@ export default {
 </script>
 
 <style lang="scss">
-
-$primary-color: #11467f;
-$border-color: #cfdae5;
+@import "~/assets/scss/utils/variables.scss";
+@import "~/assets/scss/utils/_mixins.scss";
 
 .career {
   background-color: $primary-color;
   padding: 3%;
 
   &__title {
-    text-align: center;
-    font-size: 110px;
-    color: #ffffff;
-    margin: 0 17% 20px 0;
-    font-family: Woodchuck-Regular;
-    letter-spacing: 3px;
+    @include bloc-title($back-color);
+    margin-right: 15%;
   }
 
   &__content {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   &__picture-content {

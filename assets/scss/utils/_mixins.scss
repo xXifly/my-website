@@ -1,0 +1,19 @@
+@mixin bordered-box {
+  border: 9px solid $border-color;
+  border-radius: 17px;
+  padding: 15px;
+  background-color: $back-color;
+  transition: transform ease-in-out 400ms;
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+
+@mixin bloc-title($title-color) {
+  text-align: center;
+  font-size: 110px;
+  margin: 0 0 20px 0;
+  font-family: Woodchuck-Regular;
+  letter-spacing: 3px;
+  color: $title-color;
+}

@@ -65,26 +65,18 @@ export default {
 </script>
 
 <style lang="scss">
-$primary-color: #11467f;
-$secondary-color: #f9af3b;
-$back-color: #ffffff;
-$border-color: #cfdae5;
+@import "~/assets/scss/utils/variables.scss";
+@import "~/assets/scss/utils/_mixins.scss";
+
 $circle-size: 51px;
 $array-size: 12px;
 
 .experience {
-  padding: 15px;
-  border-radius: 17px;
+  @include bordered-box;
+  box-shadow: 10px 5px 5px darken($primary-color, 5%);
   margin: 15px auto;
   position: relative;
-  background-color: $back-color;
-  border: 9px solid $border-color;
-  box-shadow: 10px 5px 5px darken($primary-color, 5%);
-  transition: transform ease-in-out 400ms;
   transform-origin: -84px 50%;
-  &:hover {
-    transform: scale(1.04);
-  }
 
   &__title {
     font-size: 19px;

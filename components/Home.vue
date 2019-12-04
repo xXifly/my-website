@@ -1,6 +1,6 @@
 <template>
   <div class="intro-panel">
-    <img class="intro-panel__portrait" src="~assets/portrait.svg" />
+    <img class="intro-panel__portrait" src="~assets/img/portrait.svg" />
     <div class="intro-panel__name">
       Hi, I'm <span class="name">Alexandre</span>.
     </div>
@@ -32,17 +32,16 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-$colour-primary: #11467f;
-$secondary-color: #f9af3b;
+@import "~/assets/scss/utils/variables.scss";
 
 .intro-panel {
-  background-color: $colour-primary;
+  background-color: $primary-color;
   padding: 5%;
   min-height: 75vh;
   position: relative;
   margin-bottom: 25vh;
   text-align: center;
-  color: #ffffff;
+  color: $back-color;
 
   &__portrait {
     width: 200px;
@@ -76,7 +75,7 @@ $secondary-color: #f9af3b;
     position: absolute;
     top: 98.1%;
     left: 50%;
-    border-top: solid 50px $colour-primary;
+    border-top: solid 50px $primary-color;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
     margin-left: -50px;
