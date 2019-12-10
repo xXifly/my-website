@@ -3,7 +3,7 @@
     <div class="skill__img-content">
       <img class="skill__img" :src="`img/${picture}`" alt="" />
     </div>
-    <h1 :class="`skill__title skill__title--${color}`">{{ name }}</h1>
+    <h1 :class="`skill__title skill__title--${code}`">{{ name }}</h1>
     <div class="skill__description" v-for="item in description" :key="item">
       {{ item }}
     </div>
@@ -22,7 +22,7 @@ export default {
       type: String,
       required: true
     },
-    color: {
+    code: {
       type: String,
       required: true
     },
@@ -42,9 +42,12 @@ export default {
   @include bordered-box;
   display: flex;
   flex-direction: column;
-  width: 33%;
   text-align: center;
   margin: 3%;
+  width: 33%;
+  @include responsive-under(laptop) {
+    width: 67%;
+  }
 
   &__img {
     width: 75%;
@@ -56,18 +59,7 @@ export default {
     font-family: Woodchuck-Regular;
     font-size: 40px;
     margin: 25px 0 10px 0;
-  }
-
-  &__title--red {
-    color: #ff3939;
-  }
-
-  &__title--blue {
-    color: lighten($primary-color, 20%);
-  }
-
-  &__title--yellow {
-    color: $secondary-color;
+    @include skill-color($skill-color);
   }
 
   &__description {

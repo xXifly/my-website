@@ -107,16 +107,24 @@ export default {
 
   &__title {
     @include bloc-title($back-color);
-    margin-right: 15%;
+    @include responsive-over(tablet) {
+      margin-right: 15%;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
+    @include responsive-under(tablet) {
+      flex-direction: column;
+    }
   }
 
   &__picture-content {
     width: 36%;
+    @include responsive-under(tablet) {
+      width: 60%;
+    }
   }
 
   &__picture {
@@ -124,10 +132,13 @@ export default {
   }
 
   &__list {
-    border-left: 9px solid $border-color;
     margin: auto;
-    width: 55%;
-    padding-left: 71px;
+    width: 70%;
+    @include responsive-over(tablet) {
+      padding-left: 71px;
+      border-left: 9px solid $border-color;
+      width: 55%;
+    }
   }
 }
 </style>

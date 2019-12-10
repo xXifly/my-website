@@ -87,6 +87,7 @@ $array-size: 12px;
   &__subtitle {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 5px 0;
   }
 
@@ -103,45 +104,47 @@ $array-size: 12px;
     text-align: justify;
   }
 
-  &::after {
-    content: "";
-    height: 0;
-    width: 0;
-    display: block;
-    position: absolute;
-    top: 50%;
-    border-right: solid $array-size $back-color;
-    border-top: solid $array-size transparent;
-    border-bottom: solid $array-size transparent;
-    margin-top: -$array-size;
-    left: -$array-size;
-  }
+  @include responsive-over(tablet) {
+    &::after {
+      content: "";
+      height: 0;
+      width: 0;
+      display: block;
+      position: absolute;
+      top: 50%;
+      border-right: solid $array-size $back-color;
+      border-top: solid $array-size transparent;
+      border-bottom: solid $array-size transparent;
+      margin-top: -$array-size;
+      left: -$array-size;
+    }
 
-  &::before {
-    content: "";
-    height: 0;
-    width: 0;
-    display: block;
-    position: absolute;
-    top: 50%;
-    border-right: solid $array-size + 9 $border-color;
-    border-top: solid $array-size + 9 transparent;
-    border-bottom: solid $array-size + 9 transparent;
-    margin-top: -($array-size + 9);
-    left: -($array-size + 9);
-  }
+    &::before {
+      content: "";
+      height: 0;
+      width: 0;
+      display: block;
+      position: absolute;
+      top: 50%;
+      border-right: solid $array-size + 9 $border-color;
+      border-top: solid $array-size + 9 transparent;
+      border-bottom: solid $array-size + 9 transparent;
+      margin-top: -($array-size + 9);
+      left: -($array-size + 9);
+    }
 
-  .circle {
-    background-color: $back-color;
-    border: 9px solid $border-color;
-    width: $circle-size;
-    height: $circle-size;
-    border-radius: $circle-size / 2;
-    display: block;
-    position: absolute;
-    margin-top: -$circle-size / 2;
-    left: -84px - $circle-size / 2;
-    top: 50%;
+    .circle {
+      background-color: $back-color;
+      border: 9px solid $border-color;
+      width: $circle-size;
+      height: $circle-size;
+      border-radius: $circle-size / 2;
+      display: block;
+      position: absolute;
+      margin-top: -$circle-size / 2;
+      left: -84px - $circle-size / 2;
+      top: 50%;
+    }
   }
 }
 </style>

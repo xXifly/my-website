@@ -2,3 +2,22 @@ $primary-color: #11467f;
 $secondary-color: #f9af3b;
 $border-color: #cfdae5;
 $back-color: #ffffff;
+
+$skill-color: (
+  man: (
+    color: #ff3939
+  ),
+  ful: (
+    color: lighten($primary-color, 20%)
+  ),
+  des: (
+    color: $secondary-color
+  )
+);
+
+$breakpoints: (
+  mobile: 576px,
+  tablet: 768px,
+  laptop: 992px,
+  desktop: 1200px
+);

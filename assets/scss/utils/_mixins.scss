@@ -17,3 +17,23 @@
   letter-spacing: 3px;
   color: $title-color;
 }
+
+@mixin skill-color($colors) {
+  @each $state, $color in $colors {
+    &--#{$state} {
+      color: map-get($color, color);
+    }
+  }
+}
+
+@mixin responsive-over($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin responsive-under($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
