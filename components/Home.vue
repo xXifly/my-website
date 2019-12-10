@@ -32,7 +32,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "~/assets/scss/utils/variables.scss";
+@import "~/assets/scss/utils/_variables.scss";
 
 .intro-panel {
   background-color: $primary-color;

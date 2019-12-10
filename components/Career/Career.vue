@@ -98,7 +98,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~/assets/scss/utils/variables.scss";
+@import "~/assets/scss/utils/_variables.scss";
 @import "~/assets/scss/utils/_mixins.scss";
 
 .career {
