@@ -6,7 +6,7 @@
       <span class="company">{{ company.toUpperCase() }}</span> |
       <span class="post">{{ post }}</span>
     </div>
-    <div class="experience__subtitle">
+    <div class="experience__information">
       <span class="experience__date">{{ startDate }} to {{ endDate }}</span>
       <span class="experience__location">
         {{ location }} <fa :icon="['fas', 'map-marker-alt']" />
@@ -68,37 +68,18 @@ export default {
 @import "~/assets/scss/utils/_variables.scss";
 @import "~/assets/scss/utils/_mixins.scss";
 
+$background-color: $primary-color;
 $circle-size: 51px;
 $array-size: 12px;
 
 .experience {
   @include bordered-box;
-  box-shadow: 10px 5px 5px darken($primary-color, 5%);
+  @include information-card;
+  padding: $card-padding;
+  box-shadow: 10px 5px 5px darken($background-color, 5%);
   margin: 15px auto;
   position: relative;
   transform-origin: -84px 50%;
-
-  &__title {
-    font-size: 19px;
-    font-weight: bold;
-    color: $primary-color;
-  }
-
-  &__subtitle {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 5px 0;
-  }
-
-  &__location {
-    color: darken($secondary-color, 12%);
-    font-weight: 600;
-  }
-
-  &__date {
-    color: #757575;
-  }
 
   &__content {
     text-align: justify;
@@ -112,7 +93,7 @@ $array-size: 12px;
       display: block;
       position: absolute;
       top: 50%;
-      border-right: solid $array-size $back-color;
+      border-right: solid $array-size $white;
       border-top: solid $array-size transparent;
       border-bottom: solid $array-size transparent;
       margin-top: -$array-size;
@@ -134,7 +115,7 @@ $array-size: 12px;
     }
 
     .circle {
-      background-color: $back-color;
+      background-color: $white;
       border: 9px solid $border-color;
       width: $circle-size;
       height: $circle-size;

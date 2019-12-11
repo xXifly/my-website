@@ -1,21 +1,29 @@
 @mixin bordered-box {
   border: 9px solid $border-color;
   border-radius: 17px;
-  padding: 15px;
-  background-color: $back-color;
+  background-color: $white;
   transition: transform ease-in-out 400ms;
   &:hover {
     transform: scale(1.04);
   }
 }
 
-@mixin bloc-title($title-color) {
-  text-align: center;
-  font-size: 110px;
-  margin: 0 0 20px 0;
-  font-family: Woodchuck-Regular;
-  letter-spacing: 3px;
-  color: $title-color;
+@mixin bloc($background-color) {
+  background-color: $background-color;
+  padding: 3%;
+
+  &__title {
+    text-align: center;
+    font-size: $title-size-font;
+    margin: 0 0 20px 0;
+    font-family: Woodchuck-Regular;
+    letter-spacing: 3px;
+    @if ($background-color == $primary-color) {
+      color: $white;
+    } @else {
+      color: $primary-color;
+    }
+  }
 }
 
 @mixin skill-color($colors) {
@@ -35,5 +43,29 @@
 @mixin responsive-under($breakpoint) {
   @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
     @content;
+  }
+}
+
+@mixin information-card {
+  &__title {
+    font-size: 19px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0;
+  }
+
+  &__location {
+    color: darken($secondary-color, 12%);
+    font-weight: 600;
+  }
+
+  &__date {
+    color: #757575;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="career">
-    <h1 class="career__title">Career</h1>
+    <h1 class="career__title">Experience</h1>
     <div class="career__content">
       <div class="career__picture-content">
         <img class="career__picture" src="~/assets/img/career.svg" />
@@ -29,14 +29,6 @@ import Experience from "./Experience.vue";
 export default {
   components: {
     Experience
-  },
-  head: {
-    link: [
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Roboto"
-      }
-    ]
   },
   data() {
     return {
@@ -101,12 +93,12 @@ export default {
 @import "~/assets/scss/utils/_variables.scss";
 @import "~/assets/scss/utils/_mixins.scss";
 
+$background-color: $primary-color;
+
 .career {
-  background-color: $primary-color;
-  padding: 3%;
+  @include bloc($background-color);
 
   &__title {
-    @include bloc-title($back-color);
     @include responsive-over(tablet) {
       margin-right: 15%;
     }

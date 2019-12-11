@@ -40,6 +40,7 @@ export default {
 
 .skill {
   @include bordered-box;
+  padding: $card-padding;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -64,7 +65,7 @@ export default {
 
   &__description {
     text-align: justify;
-    margin: 10px;
+    margin: 10px 0;
   }
 }
 </style>

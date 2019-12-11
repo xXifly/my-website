@@ -41,7 +41,7 @@ export default Vue.extend({
   position: relative;
   margin-bottom: 25vh;
   text-align: center;
-  color: $back-color;
+  color: $white;
 
   &__portrait {
     width: 200px;

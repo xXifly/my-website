@@ -3,6 +3,7 @@
     <Home />
     <AboutMe />
     <Career />
+    <Education />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Home from "~/components/Home.vue";
 import Career from "~/components/Career/Career.vue";
 import AboutMe from "~/components/AboutMe/AboutMe.vue";
+import Education from "~/components/Education/Education.vue";
 
 export default {
   name: "index",
   components: {
     Home,
     Career,
-    AboutMe
+    AboutMe,
+    Education
   }
 };
 </script>
@@ -24,7 +27,6 @@ export default {
 <style>
 .container {
   margin: 0 auto;
-  min-height: 200vh;
   display: flex;
   flex-direction: column;
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,

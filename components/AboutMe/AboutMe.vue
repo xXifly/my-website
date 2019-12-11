@@ -63,12 +63,10 @@ export default {
 @import "~/assets/scss/utils/_variables.scss";
 @import "~/assets/scss/utils/_mixins.scss";
 
-.about-me {
-  min-height: 100vh;
+$background-color: $white;
 
-  &__title {
-    @include bloc-title($primary-color);
-  }
+.about-me {
+  @include bloc($background-color);
 
   &__content {
     display: flex;
