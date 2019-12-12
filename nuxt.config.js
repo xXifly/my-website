@@ -27,7 +27,14 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ["~/plugins/i18n.js"], // webpack plugin
+  router: {
+    // customize nuxt.js router (vue-router).
+    middleware: "i18n" // middleware all pages of the application
+  },
+  generate: {
+    routes: ["/", "/about", "/fr", "/fr/about"]
+  },
   /*
    ** Nuxt.js dev-modules
    */
@@ -56,6 +63,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    vendor: ["vue-i18n"] // webpack vue-i18n.bundle.js
   }
 };

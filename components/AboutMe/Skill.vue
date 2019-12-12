@@ -1,7 +1,7 @@
 <template>
   <div class="skill">
     <div class="skill__img-content">
-      <img class="skill__img" :src="`img/${picture}`" alt="" />
+      <img class="skill__img" :src="`/img/${picture}`" alt="" />
     </div>
     <h1 :class="`skill__title skill__title--${code}`">{{ name }}</h1>
     <div class="skill__description" v-for="item in description" :key="item">

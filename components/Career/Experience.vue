@@ -7,7 +7,7 @@
       <span class="post">{{ post }}</span>
     </div>
     <div class="experience__information">
-      <span class="experience__date">{{ startDate }} to {{ endDate }}</span>
+      <span class="experience__date">{{ date }}</span>
       <span class="experience__location">
         {{ location }} <fa :icon="['fas', 'map-marker-alt']" />
       </span>
@@ -40,11 +40,7 @@ export default {
       type: String,
       required: true
     },
-    startDate: {
-      type: String,
-      required: true
-    },
-    endDate: {
+    date: {
       type: String,
       default: "now"
     },

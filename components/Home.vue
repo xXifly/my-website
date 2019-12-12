@@ -1,12 +1,14 @@
 <template>
   <div class="intro-panel">
+    <div class="intro-panel__lang">
+      <nuxt-link to="/fr">Fr</nuxt-link> / <nuxt-link to="/en">En</nuxt-link>
+    </div>
     <img class="intro-panel__portrait" src="~assets/img/portrait.svg" />
     <div class="intro-panel__name">
-      Hi, I'm <span class="name">Alexandre</span>.
+      {{ $t("home.introduction") }}<span class="name">Alexandre</span>.
     </div>
     <div class="intro-panel__description">
-      I'm a {{ age }}-year-old web developer passionate aboute full-stack web
-      development, design and graphics.
+      {{ $t("home.presentation1") }}{{ age }}{{ $t("home.presentation2") }}
     </div>
   </div>
 </template>
@@ -42,6 +44,25 @@ export default Vue.extend({
   margin-bottom: 25vh;
   text-align: center;
   color: $white;
+
+  &__lang {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+    a {
+      text-decoration: none;
+      &:visited {
+        color: $white;
+      }
+      &:hover {
+        color: darken($white, 30%);
+      }
+    }
+  }
 
   &__portrait {
     width: 200px;

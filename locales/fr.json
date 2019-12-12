@@ -1,0 +1,73 @@
+{
+  "home": {
+    "introduction": "Salut, c'est moi ",
+    "presentation1": "Je suis un développeur de ",
+    "presentation2": " ans, passionné par le développement web full-stack, le design et le graphisme."
+  },
+  "aboutMe": {
+    "title": "A propos de moi",
+    "skills": [
+      {
+        "title": "Developpement Full-Stack",
+        "description": [
+          "Investi dans toutes les étapes du développement, j'aime passer du temps à rendre mon code le plus optimisé, le plus ordonné et le plus efficace possible."
+        ]
+      },
+      {
+        "title": "Designer",
+        "description": [
+          "Passionné par l'art, le design et le graphisme, j'aime créer les meilleurs interface UX/UI.",
+          "Je réalise mes propres logos, icons et graphiques afin de créer des interface unique."
+        ]
+      },
+      {
+        "title": "Management",
+        "description": [
+          "Habitué à travailler en équipe, je maïtrise les fondamentaux de la méthode Agile et ais de bonnes connaissances en management de projet et d'équipe.",
+          "Je suis d'un naturel sociable et aime le contact humain. J'utilise cela pout améliorer la productivité de mes projets."
+        ]
+      }
+    ]
+  },
+  "career": {
+    "title": "Experience",
+    "experiences": [
+      {
+        "post": "Developpeur Full Stack Aurélia / C#",
+        "company": "Apside / Berger Levrault",
+        "location": "Toulouse, France",
+        "date": "De Mars à Septembre 2019",
+        "description": "Projet de fin d'étude (PFE) au sein de l'ESN Apside, en mission chez le client Berger-Levrault.",
+        "objective": "Conception et réalisation de solutions techniques sur une plateforme web médico-sociale (Dossier administratif, Facturation, Dossier de soins, Planning, Prescription, Connecteur …).",
+        "environment": "HTML, CSS, TypeScript, Aurelia, C# et API REST."
+      },
+      {
+        "post": "Chef de projet, intégrateur et développeur Full Stack JavaScript",
+        "company": "Armatis-Lc",
+        "location": "Calais, France",
+        "date": "De Septembre 2018 à Mars 2019",
+        "description": "Projet Innovation et Conception (PIC) réalisé au sein de l'entreprise Armatis-lc accompagné de deux collègues élèves-ingénieurs : Jean-Christophe Meyer et Ulysse Pirlot.",
+        "objective": "Conception d'une solution digitale accompagnant le téléconseiller dans le but de simplifier sa tâche quotidienne et lui offrir des moyens d’agrémenter sa conversation avec le client en prenant appui sur les fichiers de prospection en base et en allant sourcer sur le web des informations pertinentes et géolocalisées.",
+        "environment": "Node.Js, HTML, CSS, Javascript et C#."
+      },
+      {
+        "post": "Stagiaire en développement Web sous méthode Agile",
+        "company": "U-Need Consulting",
+        "location": "Toulouse, France",
+        "date": "De Juin à Aout 2018",
+        "description": "Stage d'assistant ingénieur au sein de l'entreprise U-Need.",
+        "objective": "Intervention sur l’évolution et l’optimisation d'une application web de gestion. Digitalisation du système de facturation de l’entreprise. Pilotage et réalisation du projet par la mise en place d'une méthode AGILE.",
+        "environment": "PHP, SQL, Javascript, JQuery, CSS, HTML."
+      },
+      {
+        "post": "Intégrateur, designer et développeur web",
+        "company": "2ST-CI and Wake Up Africa",
+        "location": "Abidjan, Côte d'Ivoire",
+        "date": "De Juin à Aout 2016",
+        "description": "Stage au sein de l'ENS 2ST-CI et l'association Wake Up Africa, association créée par des ivoiriens dans le but de développer les domaines de la santé et de l'éducation en Côte d'Ivoire et, plus globalement, en Afrique.",
+        "objective": "Développement d'une plateforme web d'échange de données médicales ayant pour objectif de faciliter les diagnostics médicaux et de les rendre accessibles dans tout le pays. Création du site officiel de l'association Wake Up Africa.",
+        "environment": "CSS, HTML, PHP, MySQL, Bootstrap and jQuery."
+      }
+    ]
+  }
+}

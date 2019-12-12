@@ -1,6 +1,6 @@
 <template>
   <div class="about-me">
-    <h1 class="about-me__title">About Me</h1>
+    <h1 class="about-me__title">{{ $t("aboutMe.title") }}</h1>
     <div class="about-me__content">
       <Skill
         v-for="item in skills"
@@ -29,29 +29,21 @@ export default {
       skills: [
         {
           code: "ful",
-          name: "FullStack Developer",
+          name: this.$t("aboutMe.skills[0].title"),
           picture: "",
-          description: [
-            "Invested in all layers of development, I like to create the most optimized, ordered and efficient code."
-          ]
+          description: this.$t("aboutMe.skills[0].description")
         },
         {
           code: "des",
-          name: "Designer",
+          name: this.$t("aboutMe.skills[1].title"),
           picture: "designer.svg",
-          description: [
-            "Passionate about art, design and graphics, I strive to create the best UX/UI interface.",
-            "I use my own style to design logos, icons and graphics to create an unique application."
-          ]
+          description: this.$t("aboutMe.skills[1].description")
         },
         {
           code: "man",
-          name: "Management skills",
+          name: this.$t("aboutMe.skills[2].title"),
           picture: "management.svg",
-          description: [
-            "Accustomed to working in a team, I have a good understanding of the Agile method and good knowledge of project and team management.",
-            "I am naturally sociable and enjoy human contact. I use this to improve the productivity of my projects because together we go further."
-          ]
+          description: this.$t("aboutMe.skills[2].description")
         }
       ]
     };
