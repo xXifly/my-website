@@ -76,6 +76,9 @@ $background-color: $primary-color;
       border-left: 9px solid $border-color;
       width: 55%;
     }
+    @include responsive-under(mobile) {
+      width: 100%;
+    }
   }
 }
 </style>

@@ -61,6 +61,10 @@ $background-color: $white;
   align-items: center;
   width: max-content;
   margin: 3% auto;
+  max-width: 100%;
+  @include responsive-under(tablet) {
+    flex-direction: column;
+  }
 
   &__picture {
     width: 300px;
@@ -69,7 +73,9 @@ $background-color: $white;
   &__picture-content {
     text-align: center;
     padding: $card-padding;
-    border-right: 9px solid $border-color;
+    @include responsive-over(tablet) {
+      border-right: 9px solid $border-color;
+    }
   }
 
   &__description-content {

@@ -104,14 +104,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1058"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
      id="namedview1493"
      showgrid="false"
-     inkscape:zoom="4"
-     inkscape:cx="55.974208"
-     inkscape:cy="166.47359"
-     inkscape:window-x="1592"
+     inkscape:zoom="2"
+     inkscape:cx="8.336472"
+     inkscape:cy="123.49034"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer5" />
@@ -326,7 +326,7 @@
     </g>
     <path
        style="fill:#0b3056;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 229.12589,286.09728 26.73474,59.48721 c 0,0 -32.33482,-22.19432 -31.95216,-26.59492 0.38266,-4.4006 6.36173,-7.94021 6.3139,-8.60987 -0.0511,-0.71566 -11.10181,-4.22665 -11.28849,-4.97458 -0.52924,-2.1204 1.36704,-20.00059 10.19201,-19.30784 z"
+       d="m 229.12589,286.09728 26.73474,67.42471 c 0,0 -32.33482,-30.13182 -31.95216,-34.53242 0.38266,-4.4006 6.36173,-7.94021 6.3139,-8.60987 -0.0511,-0.71566 -11.10181,-4.22665 -11.28849,-4.97458 -0.52924,-2.1204 1.36704,-20.00059 10.19201,-19.30784 z"
        id="path2961"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccsssc" />
@@ -334,7 +334,7 @@
        sodipodi:nodetypes="ccsssc"
        inkscape:connector-curvature="0"
        id="path2963"
-       d="m 282.71273,285.61114 -26.8521,59.97335 c 0,0 32.33482,-22.19432 31.95216,-26.59492 -0.38266,-4.4006 -6.36173,-7.94021 -6.3139,-8.60987 0.0511,-0.71566 11.10181,-4.22665 11.28849,-4.97458 0.52924,-2.1204 -1.24968,-20.48673 -10.07465,-19.79398 z"
+       d="m 282.71273,285.61114 -26.8521,67.91085 c 0,0 32.33482,-30.13182 31.95216,-34.53242 -0.38266,-4.4006 -6.36173,-7.94021 -6.3139,-8.60987 0.0511,-0.71566 11.10181,-4.22665 11.28849,-4.97458 0.52924,-2.1204 -1.24968,-20.48673 -10.07465,-19.79398 z"
        style="fill:#0b3056;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>

@@ -10,6 +10,14 @@
     <div class="intro-panel__description">
       {{ $t("home.presentation1") }}{{ age }}{{ $t("home.presentation2") }}
     </div>
+    <div class="intro-panel__network">
+      <a href="https://www.linkedin.com/in/alexandre-joron-797460a8">
+        <fa :icon="['fab', 'linkedin']" />
+      </a>
+      <a href="https://github.com/xXifly">
+        <fa :icon="['fab', 'github']" />
+      </a>
+    </div>
   </div>
 </template>
 
@@ -35,6 +43,7 @@ export default Vue.extend({
 
 <style lang="scss">
 @import "~/assets/scss/utils/_variables.scss";
+@import "~/assets/scss/utils/_mixins.scss";
 
 .intro-panel {
   background-color: $primary-color;
@@ -44,6 +53,10 @@ export default Vue.extend({
   margin-bottom: 25vh;
   text-align: center;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 
   &__lang {
     position: absolute;
@@ -52,15 +65,16 @@ export default Vue.extend({
     color: white;
     font-weight: bold;
     font-size: 18px;
+  }
 
-    a {
-      text-decoration: none;
-      &:visited {
-        color: $white;
-      }
-      &:hover {
-        color: darken($white, 30%);
-      }
+  a {
+    color: $white;
+    text-decoration: none;
+    &:visited, &:active {
+      color: $white;
+    }
+    &:hover {
+      color: darken($white, 30%);
     }
   }
 
@@ -74,7 +88,9 @@ export default Vue.extend({
     letter-spacing: 1px;
     font-weight: 500;
     font-family: Woodchuck-Regular;
-
+    @include responsive-under(mobile) {
+      font-size: 50px;
+    }
     .name {
       color: $secondary-color;
     }
@@ -83,9 +99,14 @@ export default Vue.extend({
   &__description {
     font-size: 25px;
     word-spacing: 5px;
-    width: 41%;
-    margin: auto;
     font-weight: 300;
+    @include responsive-over(mobile) {
+      width: 41%;
+    }
+  }
+
+  &__network {
+    font-size: 35px;
   }
 
   &::after {

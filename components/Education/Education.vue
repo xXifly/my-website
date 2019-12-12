@@ -26,10 +26,10 @@ export default Vue.extend({
       name: "Education",
       degrees: [
         {
-          name: "Diplome d'Ingénieur spécialité Informatique" as string,
-          organism: "Ecole d'Ingénieurs du Littoral Côte d'Opale (EILCO)" as string,
-          location: "Calais, France" as string,
-          date: "2013 to 2019" as string
+          name: "Diplome d'Ingénieur spécialité Informatique" as String,
+          organism: "Ecole d'Ingénieurs du Littoral Côte d'Opale (EILCO)" as String,
+          location: "Calais, France" as String,
+          date: "2013 to 2019" as String
         }
       ]
     };

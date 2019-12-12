@@ -1,3 +1,15 @@
+@mixin responsive-over($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint) + 1) {
+    @content;
+  }
+}
+
+@mixin responsive-under($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
 @mixin bordered-box {
   border: 9px solid $border-color;
   border-radius: 17px;
@@ -23,6 +35,9 @@
     } @else {
       color: $primary-color;
     }
+    @include responsive-under(mobile){
+      font-size: 60px;
+    }
   }
 }
 
@@ -31,18 +46,6 @@
     &--#{$state} {
       color: map-get($color, color);
     }
-  }
-}
-
-@mixin responsive-over($breakpoint) {
-  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
-    @content;
-  }
-}
-
-@mixin responsive-under($breakpoint) {
-  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
-    @content;
   }
 }
 

@@ -51,6 +51,9 @@ export default Vue.extend({
   @include responsive-under(laptop) {
     width: 67%;
   }
+  @include responsive-under(mobile) {
+    width: 100%;
+  }
 
   &__img {
     width: 75%;
