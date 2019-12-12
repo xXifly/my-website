@@ -19,11 +19,11 @@ import Vue from "vue";
 export default Vue.extend({
   name: "Home",
   computed: {
-    age() {
-      var today = new Date();
-      var birthDate = new Date("01/25/1996");
-      var age = today.getFullYear() - birthDate.getFullYear();
-      var m = today.getMonth() - birthDate.getMonth();
+    age(): number {
+      var today: Date = new Date();
+      var birthDate: Date = new Date("01/25/1996");
+      var age: number = today.getFullYear() - birthDate.getFullYear();
+      var m: number = today.getMonth() - birthDate.getMonth();
       if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
       }

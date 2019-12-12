@@ -13,10 +13,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import Card from "./Card.vue";
 
-export default {
+export default Vue.extend({
   components: {
     Card
   },
@@ -25,15 +26,15 @@ export default {
       name: "Education",
       degrees: [
         {
-          name: "Diplome d'Ingénieur spécialité Informatique",
-          organism: "Ecole d'Ingénieurs du Littoral Côte d'Opale (EILCO)",
-          location: "Calais, France",
-          date: "2013 to 2019"
+          name: "Diplome d'Ingénieur spécialité Informatique" as string,
+          organism: "Ecole d'Ingénieurs du Littoral Côte d'Opale (EILCO)" as string,
+          location: "Calais, France" as string,
+          date: "2013 to 2019" as string
         }
       ]
     };
   }
-};
+});
 </script>
 
 <style lang="scss">

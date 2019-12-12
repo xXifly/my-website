@@ -16,10 +16,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import Skill from "./Skill.vue";
 
-export default {
+export default Vue.extend({
   components: {
     Skill
   },
@@ -28,27 +29,27 @@ export default {
       name: "AboutMe",
       skills: [
         {
-          code: "ful",
-          name: this.$t("aboutMe.skills[0].title"),
-          picture: "",
-          description: this.$t("aboutMe.skills[0].description")
+          code: "ful" as String,
+          name: this.$t("aboutMe.skills[0].title") as String,
+          picture: "" as String,
+          description: this.$t("aboutMe.skills[0].description") as String
         },
         {
-          code: "des",
-          name: this.$t("aboutMe.skills[1].title"),
-          picture: "designer.svg",
-          description: this.$t("aboutMe.skills[1].description")
+          code: "des" as String,
+          name: this.$t("aboutMe.skills[1].title") as String,
+          picture: "designer.svg" as String,
+          description: this.$t("aboutMe.skills[1].description") as String
         },
         {
-          code: "man",
-          name: this.$t("aboutMe.skills[2].title"),
-          picture: "management.svg",
-          description: this.$t("aboutMe.skills[2].description")
+          code: "man" as String,
+          name: this.$t("aboutMe.skills[2].title") as String,
+          picture: "management.svg" as String,
+          description: this.$t("aboutMe.skills[2].description") as String
         }
       ]
     };
   }
-};
+});
 </script>
 
 <style lang="scss">

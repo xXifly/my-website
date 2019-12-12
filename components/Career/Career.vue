@@ -22,10 +22,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import Experience from "./Experience.vue";
 
-export default {
+export default Vue.extend({
   components: {
     Experience
   },
@@ -35,7 +36,7 @@ export default {
       experiences: this.$t("career.experiences")
     };
   }
-};
+});
 </script>
 
 <style lang="scss">

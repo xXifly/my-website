@@ -22,8 +22,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: "Card",
   props: {
     name: {
@@ -43,7 +45,7 @@ export default {
       required: true
     }
   }
-};
+});
 </script>
 
 <style lang="scss">
