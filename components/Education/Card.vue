@@ -74,7 +74,7 @@ $background-color: $white;
     text-align: center;
     padding: $card-padding;
     @include responsive-over(tablet) {
-      border-right: 9px solid $border-color;
+      border-right: $border-size solid $border-color;
     }
   }
 

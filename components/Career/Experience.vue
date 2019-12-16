@@ -67,8 +67,6 @@ export default Vue.extend({
 @import "~/assets/scss/utils/_mixins.scss";
 
 $background-color: $primary-color;
-$circle-size: 51px;
-$array-size: 12px;
 
 .experience {
   @include bordered-box;
@@ -85,42 +83,23 @@ $array-size: 12px;
 
   @include responsive-over(tablet) {
     &::after {
-      content: "";
-      height: 0;
-      width: 0;
-      display: block;
-      position: absolute;
+      @include array($array-size, $white, left);
       top: 50%;
-      border-right: solid $array-size $white;
-      border-top: solid $array-size transparent;
-      border-bottom: solid $array-size transparent;
-      margin-top: -$array-size;
       left: -$array-size;
     }
 
     &::before {
-      content: "";
-      height: 0;
-      width: 0;
-      display: block;
-      position: absolute;
+      @include array($array-size + $border-size, $border-color, left);
       top: 50%;
-      border-right: solid $array-size + 9 $border-color;
-      border-top: solid $array-size + 9 transparent;
-      border-bottom: solid $array-size + 9 transparent;
-      margin-top: -($array-size + 9);
-      left: -($array-size + 9);
+      left: -($array-size + $border-size);
     }
 
     .circle {
-      background-color: $white;
-      border: 9px solid $border-color;
-      width: $circle-size;
-      height: $circle-size;
-      border-radius: $circle-size / 2;
-      display: block;
-      position: absolute;
-      margin-top: -$circle-size / 2;
+      @include circle;
+      left: -71px - $circle-size / 2 - $border-size - $border-size / 2;
+      top: 50%;
+    }
+    .lol{
       left: -84px - $circle-size / 2;
       top: 50%;
     }

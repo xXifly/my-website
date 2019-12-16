@@ -69,5 +69,8 @@
         "environment": "CSS, HTML, PHP, MySQL, Bootstrap and jQuery."
       }
     ]
+  },
+  "skills": {
+    "title": "Skills"
   }
 }

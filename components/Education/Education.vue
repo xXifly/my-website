@@ -1,15 +1,16 @@
 <template>
   <div class="education">
     <h1 class="education__title">Education</h1>
-
-    <Card
-      v-for="item in degrees"
-      :key="item.name"
-      :name="item.name"
-      :organism="item.organism"
-      :location="item.location"
-      :date="item.date"
-    />
+    <div class="education__content">
+      <Card
+        v-for="item in degrees"
+        :key="item.name"
+        :name="item.name"
+        :organism="item.organism"
+        :location="item.location"
+        :date="item.date"
+      />
+    </div>
   </div>
 </template>
 

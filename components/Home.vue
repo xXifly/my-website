@@ -110,17 +110,9 @@ export default Vue.extend({
   }
 
   &::after {
-    content: "";
-    height: 0;
-    width: 0;
-    display: block;
-    position: absolute;
+    @include array(50px, $primary-color, bottom);
     top: 98.1%;
     left: 50%;
-    border-top: solid 50px $primary-color;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
-    margin-left: -50px;
   }
 }
 </style>

@@ -73,7 +73,7 @@ $background-color: $primary-color;
     width: 70%;
     @include responsive-over(tablet) {
       padding-left: 71px;
-      border-left: 9px solid $border-color;
+      border-left: $border-size solid $border-color;
       width: 55%;
     }
     @include responsive-under(mobile) {

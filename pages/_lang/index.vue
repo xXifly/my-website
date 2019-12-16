@@ -4,6 +4,7 @@
     <AboutMe />
     <Career />
     <Education />
+    <Skills />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Home from "~/components/Home.vue";
 import Career from "~/components/Career/Career.vue";
 import AboutMe from "~/components/AboutMe/AboutMe.vue";
 import Education from "~/components/Education/Education.vue";
+import Skills from "~/components/Skills/Skills.vue";
 
 export default {
   name: "index",
@@ -19,7 +21,8 @@ export default {
     Home,
     Career,
     AboutMe,
-    Education
+    Education,
+    Skills
   }
 };
 </script>

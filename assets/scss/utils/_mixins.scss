@@ -10,19 +10,18 @@
   }
 }
 
-@mixin bordered-box {
-  border: 9px solid $border-color;
-  border-radius: 17px;
-  background-color: $white;
-  transition: transform ease-in-out 400ms;
-  &:hover {
-    transform: scale(1.04);
+@mixin flex($direction) {
+  display: flex;
+  @if ($direction == "column") {
+    flex-direction: column;
   }
+  flex-wrap: wrap;
 }
 
 @mixin bloc($background-color) {
   background-color: $background-color;
   padding: 3%;
+  min-height: 100vh;
 
   &__title {
     text-align: center;
@@ -35,17 +34,19 @@
     } @else {
       color: $primary-color;
     }
-    @include responsive-under(mobile){
+    @include responsive-under(mobile) {
       font-size: 60px;
     }
   }
 }
 
-@mixin skill-color($colors) {
-  @each $state, $color in $colors {
-    &--#{$state} {
-      color: map-get($color, color);
-    }
+@mixin bordered-box {
+  border: $border-size solid $border-color;
+  border-radius: 17px;
+  background-color: $white;
+  transition: transform ease-in-out 400ms;
+  &:hover {
+    transform: scale(1.04);
   }
 }
 
@@ -70,5 +71,41 @@
 
   &__date {
     color: #757575;
+  }
+}
+
+@mixin skill-color($colors) {
+  @each $state, $color in $colors {
+    &--#{$state} {
+      color: map-get($color, color);
+    }
+  }
+}
+
+@mixin circle {
+  background-color: $white;
+  border: $border-size solid $border-color;
+  width: $circle-size;
+  height: $circle-size;
+  border-radius: $circle-size / 2;
+  display: block;
+  position: absolute;
+  margin-top: -$circle-size / 2;
+}
+
+@mixin array($array-size, $array-color, $array-direction) {
+  content: "";
+  position: absolute;
+  @if ($array-direction == left) {
+    border-right: solid $array-size $array-color;
+    border-top: solid $array-size transparent;
+    border-bottom: solid $array-size transparent;
+    margin-top: -$array-size;
+  }
+  @if ($array-direction == bottom) {
+    border-top: solid $array-size $array-color;
+    border-left: solid $array-size transparent;
+    border-right: solid $array-size transparent;
+    margin-left: -$array-size;
   }
 }
