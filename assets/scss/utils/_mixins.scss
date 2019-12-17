@@ -21,7 +21,6 @@
 @mixin bloc($background-color) {
   background-color: $background-color;
   padding: 3%;
-  min-height: 100vh;
 
   &__title {
     text-align: center;

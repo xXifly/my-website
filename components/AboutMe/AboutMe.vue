@@ -31,7 +31,7 @@ export default Vue.extend({
         {
           code: "ful" as String,
           name: this.$t("aboutMe.skills[0].title") as String,
-          picture: "" as String,
+          picture: "developer.svg" as String,
           description: this.$t("aboutMe.skills[0].description") as String
         },
         {

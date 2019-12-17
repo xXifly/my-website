@@ -5,6 +5,7 @@
     <Career />
     <Education />
     <Skills />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Career from "~/components/Career/Career.vue";
 import AboutMe from "~/components/AboutMe/AboutMe.vue";
 import Education from "~/components/Education/Education.vue";
 import Skills from "~/components/Skills/Skills.vue";
+import Footer from "~/components/Footer/Footer.vue";
 
 export default {
   name: "index",
@@ -22,7 +24,8 @@ export default {
     Career,
     AboutMe,
     Education,
-    Skills
+    Skills,
+    Footer
   }
 };
 </script>

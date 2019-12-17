@@ -33,7 +33,7 @@ export default Vue.extend({
           name: "Front-End",
           category: [
             {
-              name: "Languages",
+              name: this.$t("skills.languages"),
               techno: [
                 { name: "HTML", rate: 90 },
                 { name: "CSS", rate: 90 },
@@ -63,7 +63,7 @@ export default Vue.extend({
           name: "Back-End",
           category: [
             {
-              name: "Languages",
+              name: this.$t("skills.languages"),
               techno: [
                 { name: "TypeScript", rate: 60 },
                 { name: "Java", rate: 50 },
@@ -75,6 +75,19 @@ export default Vue.extend({
               techno: [
                 { name: "Node.js", rate: 60 },
                 { name: "Express", rate: 50 }
+              ]
+            }
+          ]
+        },
+        {
+          name: "Design",
+          category: [
+            {
+              name: this.$t("skills.software"),
+              techno: [
+                { name: "Photoshop", rate: 70 },
+                { name: "Illustrator", rate: 60 },
+                { name: "Inkscape", rate: 80 }
               ]
             }
           ]

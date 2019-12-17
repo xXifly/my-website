@@ -61,13 +61,29 @@
       },
       {
         "post": "Intégrateur, designer et développeur web",
-        "company": "2ST-CI and Wake Up Africa",
+        "company": "2ST-CI et Wake Up Africa",
         "location": "Abidjan, Côte d'Ivoire",
         "date": "De Juin à Aout 2016",
         "description": "Stage au sein de l'ENS 2ST-CI et l'association Wake Up Africa, association créée par des ivoiriens dans le but de développer les domaines de la santé et de l'éducation en Côte d'Ivoire et, plus globalement, en Afrique.",
         "objective": "Développement d'une plateforme web d'échange de données médicales ayant pour objectif de faciliter les diagnostics médicaux et de les rendre accessibles dans tout le pays. Création du site officiel de l'association Wake Up Africa.",
-        "environment": "CSS, HTML, PHP, MySQL, Bootstrap and jQuery."
+        "environment": "CSS, HTML, PHP, MySQL, Bootstrap et jQuery."
       }
     ]
+  },
+  "education" : {
+    "title": "Formation",
+    "degrees": [
+      {
+        "name": "Diplome d'Ingénieur spécialité Informatique",
+        "organism": "Ecole d'Ingénieurs du Littoral Côte d'Opale (EILCO)",
+        "location": "Calais, France",
+        "date": "De 2013 à 2019"
+      }
+    ]
+  },
+  "skills" : {
+    "title": "Compétences",
+    "languages": "Langages",
+    "software": "Logiciels"
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="education">
-    <h1 class="education__title">Education</h1>
+    <h1 class="education__title">{{ $t("education.title") }}</h1>
     <div class="education__content">
       <Card
         v-for="item in degrees"
@@ -25,14 +25,7 @@ export default Vue.extend({
   data() {
     return {
       name: "Education",
-      degrees: [
-        {
-          name: "Diplome d'Ingénieur spécialité Informatique" as String,
-          organism: "Ecole d'Ingénieurs du Littoral Côte d'Opale (EILCO)" as String,
-          location: "Calais, France" as String,
-          date: "2013 to 2019" as String
-        }
-      ]
+      degrees: this.$t("education.degrees")
     };
   }
 });
@@ -46,5 +39,9 @@ $background-color: $white;
 
 .education {
   @include bloc($background-color);
+
+  &__content {
+    margin: 100px 0;
+  }
 }
 </style>
