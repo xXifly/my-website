@@ -14,12 +14,13 @@
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "node-sass": "^4.13.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.11.0",
     "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^8.0.0",
-    "vue-i18n": "^8.15.1"
+    "vue-i18n": "^8.15.2",
+    "vue-template-compiler": "^2.6.11"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.1"

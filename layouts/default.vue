@@ -7,7 +7,7 @@
 <style lang="scss">
 @font-face {
   font-family: "Woodchuck-Regular";
-  src: url("~static/font/Woodchuck-Regular.otf") format("OpenType");
+  src: url("~assets/font/Woodchuck-Regular.otf") format("OpenType");
 }
 
 $primary-color: #11467f;

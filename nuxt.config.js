@@ -21,10 +21,6 @@ export default {
    */
   loading: { color: "#fff" },
   /*
-   ** Global CSS
-   */
-  css: [],
-  /*
    ** Plugins to load before mounting the App
    */
   plugins: ["~/plugins/i18n.js"], // webpack plugin
@@ -33,7 +29,7 @@ export default {
     middleware: "i18n" // middleware all pages of the application
   },
   generate: {
-    routes: ["/", "/about", "/fr", "/fr/about"]
+    routes: ["/", "/fr"]
   },
   /*
    ** Nuxt.js dev-modules
@@ -53,8 +49,8 @@ export default {
             icons: ["fas"]
           },
           {
-            set:'@fortawesome/free-brands-svg-icons',
-            icons: ['fab']
+            set: "@fortawesome/free-brands-svg-icons",
+            icons: ["fab"]
           }
         ]
       }
@@ -67,7 +63,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
-    vendor: ["vue-i18n"] // webpack vue-i18n.bundle.js
+    extend(config, ctx) {}
   }
 };

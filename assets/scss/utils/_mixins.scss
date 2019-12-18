@@ -44,6 +44,7 @@
   border-radius: 17px;
   background-color: $white;
   transition: transform ease-in-out 400ms;
+  backface-visibility: hidden;
   &:hover {
     transform: scale(1.04);
   }
