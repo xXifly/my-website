@@ -1,7 +1,12 @@
 <template>
   <div class="card">
     <div class="card__picture-content">
-      <img class="card__picture" src="~/assets/img/degree.svg" />
+      <img
+        aria-hidden="true"
+        role="img"
+        class="card__picture"
+        src="~/assets/img/degree.svg"
+      />
     </div>
     <div class="card__description-content">
       <div class="card__title">

@@ -1,8 +1,12 @@
 {
   "home": {
+    "fr-alt": "Display the website in french",
+    "en-alt": "Display the website in english",
     "introduction": "Hi, I'm ",
     "presentation1": "I'm a ",
-    "presentation2": "-year-old web developer passionate aboute full-stack web development, design and graphics."
+    "presentation2": "-year-old web developer passionate aboute full-stack web development, design and graphics.",
+    "linkedin-alt": "Redirect to my linkedin page",
+    "github-alt": "Redirect to my github page"
   },
   "aboutMe": {
     "title": "About me",

@@ -1,8 +1,12 @@
 {
   "home": {
+    "fr-alt": "Afficher le site en français",
+    "en-alt": "Afficher le site en anglais",
     "introduction": "Salut, c'est moi ",
     "presentation1": "Je suis un développeur de ",
-    "presentation2": " ans, passionné par le développement web full-stack, le design et le graphisme."
+    "presentation2": " ans, passionné par le développement web full-stack, le design et le graphisme.",
+    "linkedin-alt": "Redirige vers ma page linkedin",
+    "github-alt": "Redirige vers ma page github"
   },
   "aboutMe": {
     "title": "A propos de moi",
@@ -70,7 +74,7 @@
       }
     ]
   },
-  "education" : {
+  "education": {
     "title": "Formation",
     "degrees": [
       {
@@ -81,7 +85,7 @@
       }
     ]
   },
-  "skills" : {
+  "skills": {
     "title": "Compétences",
     "languages": "Langages",
     "software": "Logiciels"

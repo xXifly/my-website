@@ -1,9 +1,14 @@
 <template>
   <div class="intro-panel">
     <div class="intro-panel__lang">
-      <nuxt-link to="/fr">Fr</nuxt-link> / <nuxt-link to="/en">En</nuxt-link>
+      <nuxt-link to="/fr" :aria-label="$t('home.fr-alt')">Fr</nuxt-link> /
+      <nuxt-link to="/en" :aria-label="$t('home.en-alt')">En</nuxt-link>
     </div>
-    <img class="intro-panel__portrait" src="~assets/img/portrait.svg" />
+    <img
+      class="intro-panel__portrait"
+      src="~assets/img/portrait.svg"
+      aria-hidden="true"
+    />
     <div class="intro-panel__name">
       {{ $t("home.introduction") }}<span class="name">Alexandre</span>.
     </div>
@@ -11,10 +16,13 @@
       {{ $t("home.presentation1") }}{{ age }}{{ $t("home.presentation2") }}
     </div>
     <div class="intro-panel__network">
-      <a href="https://www.linkedin.com/in/alexandre-joron-797460a8">
+      <a
+        href="https://www.linkedin.com/in/alexandre-joron-797460a8"
+        :aria-label="$t('home.linkedin-alt')"
+      >
         <fa :icon="['fab', 'linkedin']" />
       </a>
-      <a href="https://github.com/xXifly">
+      <a href="https://github.com/xXifly" :aria-label="$t('home.github-alt')">
         <fa :icon="['fab', 'github']" />
       </a>
     </div>
@@ -70,7 +78,8 @@ export default Vue.extend({
   a {
     color: $white;
     text-decoration: none;
-    &:visited, &:active {
+    &:visited,
+    &:active {
       color: $white;
     }
     &:hover {

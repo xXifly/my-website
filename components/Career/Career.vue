@@ -4,6 +4,8 @@
     <div class="career__content">
       <div class="career__svg-container">
         <svg
+          aria-hidden="true"
+          role="img"
           class="career__svg-content"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"

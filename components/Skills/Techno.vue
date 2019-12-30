@@ -42,6 +42,7 @@ export default Vue.extend({
 
   &__name {
     padding: 10px;
+    font-weight: 600;
   }
 
   &__rate {
@@ -49,7 +50,7 @@ export default Vue.extend({
     right: 10px;
     top: 0;
     line-height: 35px;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.6);
   }
 }
 </style>

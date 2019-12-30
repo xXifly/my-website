@@ -29,7 +29,7 @@ export default {
     middleware: "i18n" // middleware all pages of the application
   },
   generate: {
-    routes: ["/", "/fr"]
+    routes: ["/", "/en", "/fr"]
   },
   /*
    ** Nuxt.js dev-modules
