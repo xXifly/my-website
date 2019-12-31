@@ -35,8 +35,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "~/assets/scss/utils/_variables.scss";
-@import "~/assets/scss/utils/_mixins.scss";
+@import "~/assets/scss/main.scss";
 
 .category {
   margin: 1%;

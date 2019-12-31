@@ -5,12 +5,7 @@
 </template>
 
 <style lang="scss">
-@font-face {
-  font-family: "Woodchuck-Regular";
-  src: url("~assets/font/Woodchuck-Regular.otf") format("OpenType");
-}
-
-$primary-color: #11467f;
+@import "~/assets/scss/main.scss";
 
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",

@@ -50,8 +50,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "~/assets/scss/utils/_variables.scss";
-@import "~/assets/scss/utils/_mixins.scss";
+@import "~/assets/scss/main.scss";
 
 .intro-panel {
   background-color: $primary-color;
