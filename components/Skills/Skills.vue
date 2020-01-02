@@ -44,10 +44,10 @@ export default Vue.extend({
             {
               name: "Frameworks",
               techno: [
-                { name: "Angular", rate: 60 },
-                { name: "Vue", rate: 70 },
-                { name: "React", rate: 50 },
-                { name: "Aurelia", rate: 60 }
+                { name: "Angular", rate: 80 },
+                { name: "Vue", rate: 80 },
+                { name: "React", rate: 60 },
+                { name: "Aurelia", rate: 70 }
               ]
             },
             {

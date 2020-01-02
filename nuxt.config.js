@@ -14,7 +14,7 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/img/icon3.svg" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/img/icon.svg" }]
   },
   /*
    ** Customize the progress-bar color
